@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rayther Alquiler de carros en Bogotá - Colombia</title>
+
+  <!--    Stylesheet Files    -->
+  <link rel="stylesheet" href="../static/css/normalize.css" />
+  <link rel="stylesheet" href="../static/css/foundation.min.css" />
+  <link rel="stylesheet" href="../static/css/main.css" />
+
+  <!--    Javascript files are placed before </body>    -->
+  <!-- Additional header -->
+  {% include 'aditionalheaders.html' %}
+</head>
+
+<body>
+  <!--  Start Hero Section  -->
+  {% include 'header.html' %}
+
+
+
+
+  <!--  Start Services Section  -->
+  <section class="services" id="services">
+
+    <!--    Start Services Titles    -->
+    <div class="row">
+      <h1 class="mean_title">CONTACATANOS AHORA</h1>
+      <h2 class="sub_title">Escribenos cualquier inquietud que tengas o el carro que buscas para tu viaje y muy pronto te estaremos contactando para colaborarte en tu reserva</h2>
+    </div>
+    <!--    End Services Titles    -->
+
+
+    <!-- Start Contact section -->
+    <div class="row contact-container">
+      <div class="small-12 medium-8 large-6 columns">
+
+        <!-- Contacus form -->
+        <div class="row form-container">
+          {% include 'contactform.html' %}
+        </div>
+        <!-- ./Contacus form -->
+
+        <!-- Type of cars -->
+        <div class="row car-types-form">
+          <h2 class="sub_title">Tipos de carro</h2>
+          <div class="small-4 medium-3 large-3 medium-offset-1 large-offset-1 columns">
+            <img src="../static/img/car-sma.png" alt="" title="" class="serv_icon"/>
+            <h3 class="title"><a href="{{ url_for('smallcars') }}">Pequeño</a></h3>
+          </div>
+
+          <div class="small-4 medium-3 large-3 medium-offset-1 large-offset-1 columns">
+            <img src="../static/img/car-med.png" alt="" title="" class="serv_icon"/>
+            <h3 class="title"><a href="{{ url_for('mediumcars') }}">Mediano</a></h3>
+          </div>
+
+          <div class="small-4 medium-3 large-3 medium-offset-1 large-offset-1 columns">
+            <img src="../static/img/car-suv.png" alt="" title="" class="serv_icon"/>
+            <h3 class="title"><a href="{{ url_for('suvcars') }}">Camioneta</a></h3>
+          </div>
+        </div>
+
+
+        <!-- <div class="row">
+        <h2 class="sub_title">Tipos de carro</h2>
+        <div class="small-4 medium-2 large-2 medium-offset-1 large-offset-1 columns">
+        <img src="../static/img/car-sma.png" alt="" title="" class="serv_icon"/>
+        <h3 class="title"><a href="#">Pequeño</a></h3>
+      </div>
+
+      <div class="small-4 medium-2 large-2 medium-offset-1 large-offset-1 columns">
+      <img src="../static/img/car-med.png" alt="" title="" class="serv_icon"/>
+      <h3 class="title"><a href="#">Mediano</a></h3>
+    </div>
+
+    <div class="small-4 medium-2 large-2 medium-offset-1 large-offset-1 columns">
+    <img src="../static/img/car-suv.png" alt="" title="" class="serv_icon"/>
+    <h3 class="title"><a href="#">Camioneta</a></h3>
+  </div>
+  <div class="small-4 medium-3 large-3 columns">
+</div>
+</div> -->
+<!-- ./Type of cars -->
+</div>
+
+
+<div class="small-12 medium-4 large-6 columns">
+  <!--  Start Map Section  -->
+  <section class="map map-small" id="connect">
+    <div id="map_container"></div>
+  </section>
+  <!--  End Map Section  -->
+
+  <!-- Contact Phones -->
+  <div class="phones_holder">
+    <h2 class="sub_title">Lunes a Domingo 7 am - 7 pm</h2>
+    <h2 class="sub_title"><b>+57 311 8117337</b>, <b>+57 6252728</b></h2>
+  </div>
+  <!-- Contact Phones -->
+</div>
+
+</div>
+<!-- End Contact section -->
+
+
+</section>
+<!--  End Services Section  -->
+
+
+
+
+
+
+
+
+<!--  Start Footer Section  -->
+{% include 'footer.html' %}
+<!--  End Footer Section  -->
+
+<!--    Start Back To Top    -->
+<a href="#" class="btn_fancy" id="back_top">
+  <div class="solid_layer"></div>
+  <div class="border_layer"></div>
+  <div class="text_layer"><img src="../static/img/top_arrow.png" alt="Back to top" title="" class="top_arrow"></div>
+</a>
+<!--    End Back To Top    -->
+
+
+
+
+
+<!--    Javascript Files    -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script type="text/javascript" src="../static/js/jquery.js"></script>
+<script type="text/javascript" src="../static/js/touchSwipe.min.js"></script>
+<script type="text/javascript" src="../static/js/easing.js"></script>
+<script type="text/javascript" src="../static/js/foundation.min.js"></script>
+<script type="text/javascript" src="../static/js/foundation/foundation.topbar.js"></script>
+<script type="text/javascript" src="../static/js/carouFredSel.js"></script>
+<script type="text/javascript" src="../static/js/scrollTo.js"></script>
+<script type="text/javascript" src="../static/js/map.js"></script>
+<script type="text/javascript" src="../static/js/foundation/foundation.abide.js"></script>
+<script type="text/javascript" src="../static/js/main2.js"></script>
+<script type="text/javascript" src="../static/js/contactus.js"></script>
+
+</body>
+</html>
