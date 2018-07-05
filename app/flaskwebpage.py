@@ -85,7 +85,7 @@ def gomail(body_message):
         body=body_message,
         subject="Notificacion de la web",
         sender="rayther.rentacar@gmail.com",
-        recipients=["rayther.rentacar@gmail.com", "info@rayther.com", "teresa_avella@hotmail.com"])
+        recipients=["rayther.rentacar@gmail.com", "info@rayther.com", "teresa_avella@hotmail.com", "javierratiga@yahoo.com"])
     mail.send(msg)
 
 

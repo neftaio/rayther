@@ -1,11 +1,10 @@
 var map_wrapper = 'map_container';
-var longitude = 4.7312712;
-var latitude = -74.0511726;
+var longitude = 4.7314308;
+var latitude = -74.0487443;
 var bubble_content =	"<p class='map_contacts'>" +
 						"<span>Dirección : </span>" +
 						"Cra. 23 No, 148 - 59 Piso 5 Bogotá, Colombia" +
 						"</p>";
-
 
 
 
